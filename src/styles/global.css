@@ -1,0 +1,51 @@
+@import "@fontsource-variable/inter";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Smooth Scroll Behavior */
+  html {
+    scroll-behavior: smooth;
+    @apply font-sans;
+  }
+
+  /* Light Theme Background */
+  body {
+    background-color: #ffffff;
+    color: #111827;
+  }
+
+  /* Hide alt text while images are loading */
+  img {
+    color: transparent;
+    font-size: 0;
+  }
+}
+
+@layer components {
+  /* Screen Reader Only Utility */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .sr-only:focus,
+  .sr-only:focus-within {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: inherit;
+    margin: inherit;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+}
