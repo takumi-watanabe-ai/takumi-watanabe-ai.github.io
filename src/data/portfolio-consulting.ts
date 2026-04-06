@@ -155,6 +155,20 @@ export const portfolioData = {
 
   certifications: [
     {
+      name: 'AWS Certified Generative AI Developer – Professional',
+      issuer: 'Amazon Web Services',
+      earnedDate: 'March 2026',
+      badgeImage: '/badges/aws-certified-generative-ai-developer-professional.png',
+      credlyUrl: 'https://www.credly.com/badges/0227b6ca-e1a9-42ee-aa0d-a6b2030659a7/public_url',
+      additionalBadges: [
+        {
+          name: 'Early Adopter',
+          image: '/badges/aws-certified-generative-ai-developer-professional-early-adapter.png',
+          credlyUrl: 'https://www.credly.com/badges/a044686e-4ac6-452a-932f-8b37c3c58a19/public_url',
+        },
+      ],
+    },
+    {
       name: 'AWS Certified Machine Learning – Specialty',
       issuer: 'Amazon Web Services',
       earnedDate: 'March 2026',
