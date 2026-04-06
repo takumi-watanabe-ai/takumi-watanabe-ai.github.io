@@ -13,7 +13,7 @@ export const portfolioData = {
     email: 'w.takumi.cs@gmail.com',
     socialLinks: {
       linkedin: 'https://www.linkedin.com/in/takumi-watanabe/',
-      github: 'https://github.com/takumiwatanabe',
+      github: 'https://github.com/takumi-watanabe-ai',
       kaggle: 'https://www.kaggle.com/webdevbadger',
     },
     highlights: [
