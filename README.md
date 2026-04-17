@@ -1,21 +1,25 @@
-# Portfolio
+# AI Engineer Portfolio
 
-ML Engineering and Data Platform portfolio built with Astro 5 and Tailwind CSS.
+Professional portfolio for AI engineering specializing in production LLM and RAG systems.
 
-## Development
+**Live Site:** https://takumi-watanabe-ai.github.io/
+
+**Resume:** https://takumi-watanabe-ai.github.io/resume.pdf
+
+## Quick Start
 
 ```bash
 npm install
-npm run dev
-npm run build
+npm run dev      # Start dev server
+npm run build    # Build for production
 ```
 
-## Deployment
+## Update Content
 
-Deployed to GitHub Pages at https://takumi-watanabe-ai.github.io
+Edit `/src/data/portfolio.ts` - all portfolio content is in this single file.
 
-Auto-deploys on push to `main` branch via GitHub Actions.
+## Tech Stack
 
-## Content
+Astro 5 + Tailwind CSS 4
 
-Edit portfolio data in `/src/data/portfolio.ts`
+Auto-deploys to GitHub Pages on push to `main`.
