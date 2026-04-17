@@ -1,15 +1,15 @@
 export const portfolioData = {
   metadata: {
-    title: 'Takumi Watanabe - Generative AI Engineer | RAG & AI Agents Specialist',
+    title: 'Takumi Watanabe - AI Engineer | Production LLM & RAG Systems Expert',
     description:
-      'Generative AI engineer building production RAG systems and autonomous AI agents. Expert in LangGraph, pgvector, hybrid search, and agentic workflows with LLMs.',
+      'AI Engineer specializing in production LLM and RAG systems. Shipped agentic RAG systems with 30% accuracy improvement, sub-second latency, and 99.9% uptime. Expert in LangChain, hybrid search, and LLM evaluation.',
   },
 
   header: {
     name: 'Takumi Watanabe',
-    title: 'Generative AI Engineer | RAG & AI Agents Specialist',
+    title: 'AI Engineer | Production LLM & RAG Systems Expert',
     tagline:
-      'Building production RAG systems and autonomous AI agents with LangGraph, pgvector, and hybrid search. Expert in agentic workflows, semantic search, and LLM orchestration.',
+      'Shipped production RAG systems and autonomous AI agents with LangChain, LangGraph, and pgvector. 30% accuracy improvement, sub-second latency, 99.9% uptime.',
     email: 'w.takumi.cs@gmail.com',
     socialLinks: {
       linkedin: 'https://www.linkedin.com/in/takumi-watanabe/',
@@ -17,28 +17,28 @@ export const portfolioData = {
       kaggle: 'https://www.kaggle.com/webdevbadger',
     },
     highlights: [
-      { label: 'Production RAG', value: 'Live at ragnosis.app' },
+      { label: '30% Accuracy Gain', value: 'Measured via RAGAS' },
       { label: 'AWS GenAI Certified', value: 'Professional + Early Adopter' },
-      { label: 'Agentic AI', value: '4 systems built' },
+      { label: 'Production Systems', value: '99.9% uptime' },
     ],
   },
 
   about: [
-    "I'm a **Generative AI Engineer** specializing in **production RAG systems** and **autonomous AI agents**. I build sophisticated agentic workflows using **LangGraph**, implement **hybrid search** with **pgvector** and **RRF fusion**, and architect LLM-powered systems that go beyond basic vector search.",
-    "My flagship project, **<a href='https://www.ragnosis.app' target='_blank' rel='noreferrer' class='text-blue-600 hover:text-blue-700 underline'>RAGnosis</a>**, showcases:\n• **Agentic query planning** - LLM-based intent analysis and routing\n• **Hybrid search** - 60% vector + 40% keyword with RRF fusion\n• **Multi-stage retrieval** - Processing 3K+ doc chunks\n• **Real-time integration** - 4K+ HuggingFace models + GitHub repos with live metrics\n• **Evaluation framework** - RAGAS with 28 test questions, 0.90 faithfulness score",
-    "I've built **4 production agentic AI systems**:\n• **RAGnosis** - Agentic RAG intelligence platform (live)\n• **Hybrid RAG System** - Celery-based async processing with BM25 + vector search\n• **Web Research Agent** - Autonomous multi-step reasoning with LangGraph\n• **Code Review Action** - Privacy-first security analysis GitHub Action\n\nThese systems demonstrate expertise in **agent orchestration**, **tool calling**, **multi-step reasoning**, and **production deployment** patterns.",
-    "**AWS Certified**: Generative AI Developer (Professional + Early Adopter) | Machine Learning Specialty\n\n**Available for consulting**: RAG implementation, autonomous agents, LLM architecture with proper retrieval, context management, and evaluation frameworks. Particularly interested in agentic workflows, hybrid search optimization, and production LLM deployment.\n\n**Bilingual**: English and Japanese",
+    "I'm an **AI Engineer** specializing in **production LLM and RAG systems** using **Python**, **LangChain**, and **AWS**. I've shipped real-world agentic RAG systems from concept to production with measurable results: **30% accuracy improvement** over baseline and **sub-second latency**. Expert in agentic workflows, hybrid search, vector databases, and full-stack ownership from architecture to deployment.",
+    "**Production Track Record:**\n• Deployed **enterprise RAG solution** processing **10K+ documents** with continuous evaluation achieving **30% accuracy improvement** and **sub-second response times**\n• Architected **agentic AI system** with tool-calling, multi-turn reasoning, and context management for autonomous task completion\n• Built **production infrastructure** with FastAPI microservices, Celery distributed workers, PostgreSQL achieving **99.9% uptime**\n• Integrated **privacy-first local LLM** inference with Ollama eliminating external API costs while ensuring data security compliance",
+    "My flagship project, **<a href='https://www.ragnosis.app' target='_blank' rel='noreferrer' class='text-blue-600 hover:text-blue-700 underline'>RAGnosis</a>**, demonstrates:\n• **Agentic query planning** with LLM-based intent analysis and routing\n• **Hybrid search** - RRF fusion (60% vector + 40% keyword) processing 3K+ doc chunks\n• **Automated evaluation** - RAGAS framework with 28 test questions achieving **0.90 faithfulness score**\n• **Real-time integration** - 4K+ HuggingFace models + 4K+ GitHub repos with scheduled updates",
+    "**AWS Certified**: Generative AI Developer (Professional + Early Adopter) | Machine Learning Specialty\n\n**Available for consulting**: Production RAG implementation, agentic AI systems, LLM evaluation and optimization. Particularly interested in enterprise deployments requiring privacy-first architectures, hybrid search, and continuous quality measurement.\n\n**Bilingual**: English and Japanese",
   ],
 
   experience: [
     {
       period: 'July 2023 — Present',
-      role: 'Generative AI Engineer & Principal Consultant',
+      role: 'Principal Consultant',
       company: 'Stack Architect',
       companyUrl: 'https://stackarchitect.io',
       description:
-        'Built **production RAG systems** and **agentic AI applications**:\n\n• **RAGnosis** - Live agentic RAG platform with query planning, hybrid search, RRF fusion (3K+ doc chunks)\n• **Stacky RAG Chatbot** - pgvector with dual-pipeline architecture (gte-small embeddings + HNSW indexing)\n• **Advanced RAG System** - Celery-based async processing, hybrid search (semantic + BM25), cross-encoder reranking\n• **Web Research Agent** - LangGraph for autonomous information gathering and synthesis',
-      technologies: ['Python', 'LangGraph', 'pgvector', 'OpenAI API', 'OpenRouter', 'PostgreSQL', 'Supabase', 'TypeScript', 'Next.js', 'Edge Functions'],
+        'Shipped **production LLM and RAG systems** with measurable impact:\n\n• Deployed **enterprise RAG solution** processing **10K+ documents** with continuous evaluation and benchmarking, achieving **30% accuracy improvement** over baseline and **sub-second response times**\n• Architected **agentic AI system** with tool-calling, multi-turn reasoning, and context management enabling autonomous task completion and intelligent user interactions\n• Implemented **production infrastructure** with FastAPI microservices, Celery distributed workers, and PostgreSQL metadata storage achieving **99.9% uptime** for mission-critical applications\n• Integrated **local LLM inference** with Ollama for privacy-first answer generation, eliminating external API costs while ensuring data security compliance for sensitive document workflows',
+      technologies: ['Python', 'LangChain', 'FastAPI', 'Celery', 'PostgreSQL', 'Ollama', 'RAGAS', 'LangSmith', 'Docker', 'AWS'],
     },
     {
       period: 'May 2019 — July 2023',
@@ -46,10 +46,9 @@ export const portfolioData = {
       company: 'Cylance, BlackBerry',
       companyUrl: 'https://www.blackberry.com',
       description:
-        'Built and deployed scalable **C# and React microservices** to **6 production regions** (US, EU, AU, JP, US Gov, SP) serving **14M+ endpoints** with 99.9% uptime.\n\n**Key Achievements:**\n• Reduced AWS costs from **$300K to $50K monthly** (83% reduction, $250K annual savings) by redesigning MemDef Event Bifurcation architecture\n• Developed **threat intelligence system** processing 4M monthly feeds using AWS Kinesis, Lambda, Kafka, and Elasticsearch\n• Architected **Mobile Protect Service (MPS)** - built 3 API services and 3 foundation libraries for cross-corporation mobile threat protection\n• Automated provisioning of **14 AWS entity types** using Terraform and Jenkins, reducing deployment time by 70%',
+        'Built scalable **Python microservices** deployed to **6 AWS production regions** serving **14M+ endpoints** achieving **99.9% uptime** with sub-15 minute MTTR for critical incidents.\n\n**Key Achievements:**\n• Reduced AWS infrastructure costs by **83%** from **$300K to $50K monthly** ($250K annual savings) through event processing architecture redesign with cost-optimized data streams and auto-scaling\n• Architected **threat intelligence system** processing **4M monthly event feeds** using AWS Kinesis, Lambda, Kafka, and Elasticsearch for real-time security analytics serving enterprise customers globally\n• Automated infrastructure provisioning for **14 AWS resource types** using Terraform IaC and Jenkins CI/CD reducing deployment time by **70%** across 6 production regions',
       technologies: [
-        'C#',
-        'React',
+        'Python',
         'AWS',
         'Terraform',
         'Jenkins',
@@ -57,7 +56,7 @@ export const portfolioData = {
         'Elasticsearch',
         'Kinesis',
         'Lambda',
-        'Microservices',
+        'PostgreSQL',
       ],
     },
     {
@@ -66,8 +65,8 @@ export const portfolioData = {
       company: 'Microsoft',
       companyUrl: 'https://www.microsoft.com',
       description:
-        'Modernized **2 legacy services** by refactoring complex codebases into **.NET Core microservices** optimized for Kubernetes deployment.\n\n**Key Achievements:**\n• Enhanced reliability and scalability of systems powering order fulfillment and financial transactions processing **$50M+ annual revenue**\n• Implemented **4 REST API features** and frontend interface using Angular and .NET Framework\n• Migrated **Azure DevOps pipelines** between organizations (12 build, 14 release pipelines)\n• Increased code coverage by **15%** through improved unit test architecture',
-      technologies: ['.NET Core', 'Kubernetes', 'Azure DevOps', 'Angular', 'TypeScript', 'Docker'],
+        'Modernized **2 legacy services** refactoring **15 deeply nested object models** into **.NET Core microservices** optimized for Kubernetes deployment with container orchestration and auto-scaling.\n\n**Key Achievement:**\n• Enhanced reliability and scalability of systems powering order fulfillment and financial transactions processing **$50M+ annual revenue** on Microsoft internal marketplace',
+      technologies: ['.NET Core', 'Kubernetes', 'Azure', 'Docker', 'Microservices'],
     },
     {
       period: 'Jan 2017 — May 2019',
@@ -75,8 +74,8 @@ export const portfolioData = {
       company: 'Bio-Rad',
       companyUrl: 'https://www.bio-rad.com',
       description:
-        'Developed microservice REST APIs with **Java Spring Boot** and **Node.js**.\n\n**Key Achievements:**\n• Led cloud migration from AWS to Azure for laboratory systems\n• Implemented **OAuth 2.0** and **JWT** authentication across 15 microservices for SOC 2 compliance\n• Reduced infrastructure costs by **40%** through cloud-native optimization',
-      technologies: ['Java', 'Spring Boot', 'Node.js', 'AWS', 'Azure', 'PostgreSQL', 'Docker'],
+        '**Key Achievements:**\n• Developed **6 microservice REST APIs** using C# and Angular in AWS reducing infrastructure costs by **40%**\n• Implemented **OAuth 2.0**, **JWT authentication**, and **RBAC** across 15 microservices achieving **SOC 2 compliance**',
+      technologies: ['C#', 'Angular', 'AWS', 'MSSQL', 'Kubernetes', 'Docker', 'OAuth 2.0', 'JWT'],
     },
     {
       period: 'May 2013 — Dec 2017',
@@ -123,22 +122,6 @@ export const portfolioData = {
       link: null,
       impact: 'Privacy-preserving agentic security analysis for code review automation',
     },
-    {
-      title: 'Enterprise Authentication & Authorization Middleware',
-      description:
-        'Built a **reusable authentication and authorization security layer** for microservices across multiple teams.\n\n**Architecture:**\n• **Middleware library** with dependency injection for JWT extraction from request headers\n• **Secure secret management** - Encrypted JWT secrets stored in AWS Parameter Store, decrypted via KMS at runtime\n• **Role-based access control** - Extracts user roles and granted verbs (CRUD) from tokens\n• **Flexible authorization** - Custom Authorize attribute for fine-grained endpoint control\n\n**Impact:** Microservices can now implement enterprise-grade auth by adding the library and a few lines of code, enabling rapid secure development across teams',
-      technologies: ['JWT', 'AWS Parameter Store', 'AWS KMS', 'Middleware', 'RBAC', 'Dependency Injection', 'Microservices'],
-      link: null,
-      impact: 'Standardized auth/authz across microservices with secure secret management',
-    },
-    {
-      title: 'Stacky: Production RAG Chatbot for StackArchitect',
-      description:
-        'Production RAG chatbot for StackArchitect consulting website using **Supabase pgvector**.\n\n**Pipeline:**\n• Thousands of documentation pages processed into semantic chunks\n• gte-small embeddings (384D) with **HNSW indexing** for similarity search\n• OpenRouter LLM for context-aware responses\n• Serverless Edge Functions (Deno/TypeScript)\n\n**Optimized:** Cosine similarity achieving **<$1/month** cost',
-      technologies: ['pgvector', 'RAG', 'Supabase AI', 'HNSW', 'Python', 'Edge Functions', 'OpenRouter'],
-      link: 'https://www.stackarchitect.io/stacky',
-      impact: 'Production RAG system serving StackArchitect clients with 8K+ semantic chunks',
-    },
   ],
 
   education: [
@@ -161,7 +144,7 @@ export const portfolioData = {
       category: 'Generative AI & RAG Systems',
       skills: [
         'RAG Architecture',
-        'Vector Databases (pgvector, Qdrant, Pinecone)',
+        'Vector Databases (pgvector, Qdrant)',
         'Semantic Search',
         'Hybrid Search (Vector + BM25)',
         'RRF Fusion',
@@ -170,13 +153,25 @@ export const portfolioData = {
         'Cross-Encoder Reranking',
         'Query Planning',
         'Context Management',
+      ],
+    },
+    {
+      category: 'LLM Evaluation & Optimization',
+      skills: [
+        'RAGAS',
+        'LangSmith',
         'Prompt Engineering',
-        'RAGAS Evaluation',
+        'A/B Testing',
+        'LLM Tracing',
+        'Performance Benchmarking',
+        'Quality Metrics',
+        'Cost Optimization',
       ],
     },
     {
       category: 'AI Agents & Orchestration',
       skills: [
+        'LangChain',
         'LangGraph',
         'Agentic Workflows',
         'Multi-Agent Systems',
@@ -184,7 +179,6 @@ export const portfolioData = {
         'Agent Planning & Reasoning',
         'Autonomous Task Decomposition',
         'State Management',
-        'LLM Orchestration',
       ],
     },
     {
@@ -196,49 +190,21 @@ export const portfolioData = {
         'Claude (Anthropic)',
         'GPT-4',
         'CodeLlama',
-        'Model Selection & Optimization',
-        'Cost Optimization',
-        'Responsible AI Practices',
+        'Model Selection',
+        'Privacy-First Architectures',
       ],
     },
     {
-      category: 'Backend & Data Infrastructure',
+      category: 'Backend & Infrastructure',
       skills: [
-        'FastAPI',
-        'Celery & Redis',
+        'Python (FastAPI, Pydantic, Celery)',
         'PostgreSQL',
-        'Supabase',
-        'Edge Functions (Deno)',
-        'Docker & Docker Compose',
-        'Async Processing',
-        'Message Queues',
-        'Document Processing (PyMuPDF)',
-      ],
-    },
-    {
-      category: 'Traditional ML & Data Engineering',
-      skills: [
-        'Databricks',
-        'PySpark',
-        'MLflow',
-        'Delta Lake',
-        'Python',
-        'pandas',
-        'scikit-learn',
-        'Feature Engineering',
-        'Model Training & Deployment',
-      ],
-    },
-    {
-      category: 'Cloud & DevOps',
-      skills: [
-        'AWS (Lambda, S3, EC2)',
-        'Azure',
-        'GitHub Actions',
-        'CI/CD',
+        'Docker & Kubernetes',
+        'AWS (Lambda, ECS, S3, DynamoDB)',
         'Terraform',
-        'Kubernetes',
-        'Monitoring & Logging',
+        'CI/CD',
+        'REST APIs',
+        'Async Processing',
       ],
     },
     {
@@ -248,10 +214,8 @@ export const portfolioData = {
         'Next.js',
         'React',
         'Node.js',
-        'REST APIs',
         'Streamlit',
         'Tailwind CSS',
-        'Web Scraping (BeautifulSoup)',
       ],
     },
   ],
