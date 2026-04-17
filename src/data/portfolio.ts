@@ -2,14 +2,14 @@ export const portfolioData = {
   metadata: {
     title: 'Takumi Watanabe - AI Engineer | Production LLM & RAG Systems Expert',
     description:
-      'AI Engineer specializing in production LLM and RAG systems. Shipped agentic RAG systems with 30% accuracy improvement, sub-second latency, and 99.9% uptime. Expert in LangChain, hybrid search, and LLM evaluation.',
+      '15 years software engineering experience, specializing in production LLM and RAG systems. Expert in Python, LangChain, AWS, agentic workflows, hybrid search, and LLM evaluation. Live systems at ragnosis.app.',
   },
 
   header: {
     name: 'Takumi Watanabe',
     title: 'AI Engineer | Production LLM & RAG Systems Expert',
     tagline:
-      'Shipped production RAG systems and autonomous AI agents with LangChain, LangGraph, and pgvector. 30% accuracy improvement, sub-second latency, 99.9% uptime.',
+      'Specializing in production LLM and RAG systems using Python, LangChain, and AWS. Expert in agentic workflows, hybrid search, and LLM evaluation.',
     email: 'w.takumi.cs@gmail.com',
     socialLinks: {
       linkedin: 'https://www.linkedin.com/in/takumi-watanabe/',
@@ -17,17 +17,17 @@ export const portfolioData = {
       kaggle: 'https://www.kaggle.com/webdevbadger',
     },
     highlights: [
-      { label: '30% Accuracy Gain', value: 'Measured via RAGAS' },
+      { label: 'Live RAG System', value: 'ragnosis.app' },
       { label: 'AWS GenAI Certified', value: 'Professional + Early Adopter' },
-      { label: 'Production Systems', value: '99.9% uptime' },
+      { label: '15 Years Experience', value: 'Full-stack to AI systems' },
     ],
   },
 
   about: [
-    "I'm an **AI Engineer** specializing in **production LLM and RAG systems** using **Python**, **LangChain**, and **AWS**. I've shipped real-world agentic RAG systems from concept to production with measurable results: **30% accuracy improvement** over baseline and **sub-second latency**. Expert in agentic workflows, hybrid search, vector databases, and full-stack ownership from architecture to deployment.",
-    "**Production Track Record:**\n• Deployed **enterprise RAG solution** processing **10K+ documents** with continuous evaluation achieving **30% accuracy improvement** and **sub-second response times**\n• Architected **agentic AI system** with tool-calling, multi-turn reasoning, and context management for autonomous task completion\n• Built **production infrastructure** with FastAPI microservices, Celery distributed workers, PostgreSQL achieving **99.9% uptime**\n• Integrated **privacy-first local LLM** inference with Ollama eliminating external API costs while ensuring data security compliance",
-    "My flagship project, **<a href='https://www.ragnosis.app' target='_blank' rel='noreferrer' class='text-blue-600 hover:text-blue-700 underline'>RAGnosis</a>**, demonstrates:\n• **Agentic query planning** with LLM-based intent analysis and routing\n• **Hybrid search** - RRF fusion (60% vector + 40% keyword) processing 3K+ doc chunks\n• **Automated evaluation** - RAGAS framework with 28 test questions achieving **0.90 faithfulness score**\n• **Real-time integration** - 4K+ HuggingFace models + 4K+ GitHub repos with scheduled updates",
-    "**AWS Certified**: Generative AI Developer (Professional + Early Adopter) | Machine Learning Specialty\n\n**Available for consulting**: Production RAG implementation, agentic AI systems, LLM evaluation and optimization. Particularly interested in enterprise deployments requiring privacy-first architectures, hybrid search, and continuous quality measurement.\n\n**Bilingual**: English and Japanese",
+    "I'm an **AI Engineer** with **15 years of software engineering experience**, now specializing in **production LLM and RAG systems**. I architect and deploy enterprise-grade agentic AI applications using **Python**, **LangChain**, and **AWS**, with full-stack ownership from design through production deployment.",
+    "My work focuses on building **measurable, production-ready systems** rather than proofs of concept. I've deployed enterprise RAG solutions processing thousands of documents with continuous evaluation frameworks, implemented privacy-first architectures using local LLM inference, and built distributed systems achieving enterprise-grade reliability. Before specializing in AI, I spent years building scalable cloud infrastructure and microservices at companies like BlackBerry and Microsoft.",
+    "**<a href='https://www.ragnosis.app' target='_blank' rel='noreferrer' class='text-blue-600 hover:text-blue-700 underline'>RAGnosis</a>** is my flagship project—a live agentic RAG platform demonstrating sophisticated patterns beyond basic vector search. It combines agentic query planning, hybrid search with RRF fusion, automated quality evaluation via RAGAS, and real-time integration with HuggingFace models and GitHub repositories. The system showcases production-ready techniques for building intelligent, evaluated RAG applications.",
+    "**AWS Certified**: Generative AI Developer (Professional + Early Adopter) | Machine Learning Specialty\n\n**Available for consulting**: Enterprise RAG implementation, agentic AI systems, LLM evaluation frameworks, and privacy-first architectures. Particularly interested in projects requiring measurable quality improvements, hybrid search optimization, and production deployment expertise.\n\n**Bilingual**: English and Japanese",
   ],
 
   experience: [
@@ -287,7 +287,7 @@ export const portfolioData = {
   ],
 
   footer: {
-    text: 'Available for Generative AI consulting. Let\'s build intelligent systems together.',
+    text: `Available for AI engineering consulting. Let's build production-ready intelligent systems together. © ${new Date().getFullYear()} Takumi Watanabe`,
     link: null,
   },
 };
