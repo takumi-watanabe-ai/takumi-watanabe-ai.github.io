@@ -10,12 +10,10 @@
     @apply font-sans;
   }
 
-  /* Light Theme: "Cognitive Clarity" - Premium AI Dashboard Feel */
+  /* Light Theme: "Kinetic Paper" - Premium AI Research Lab Feel */
   body {
-    background-color: #F9FAFB; /* Soft Alabaster - reduces eye strain */
-    color: #111827; /* Ink Charcoal */
-    background-image: radial-gradient(circle, #E5E7EB 1px, transparent 1px);
-    background-size: 20px 20px;
+    background-color: #FFFFFF; /* Pure white - maximum "lab" feel */
+    color: #18181B; /* Deep charcoal - almost black */
   }
 
   /* Dark Theme: Remove dot matrix, use solid background */
@@ -31,14 +29,14 @@
     font-size: 0;
   }
 
-  /* Global link styling for content - Indigo Insight brand color */
+  /* Global link styling for content - Ember primary */
   section a,
   article a,
   p a {
-    @apply text-indigo hover:text-indigo-hover underline transition-colors;
+    @apply text-ember hover:text-ember-hover underline transition-colors;
   }
 
-  /* Dark mode link colors */
+  /* Dark mode link colors - Sky primary, Teal secondary */
   .dark section a,
   .dark article a,
   .dark p a {
@@ -74,80 +72,80 @@
 
   /* Section Headers - Mobile sticky headers with glassy effect */
   .section-header-mobile {
-    @apply sticky top-0 z-20 -mx-6 mb-6 bg-alabaster/80 dark:bg-slate-950/90 px-6 py-4 backdrop-blur-glass border-b border-platinum dark:border-slate-800 lg:hidden;
+    @apply sticky top-0 z-20 -mx-6 mb-6 bg-coconut/90 dark:bg-slate-950/90 px-6 py-4 backdrop-blur-glass border-b border-fog dark:border-slate-800 lg:hidden;
   }
 
   .section-header-title {
-    @apply text-sm font-bold uppercase tracking-wider text-charcoal dark:text-sky-400;
+    @apply text-sm font-bold uppercase tracking-wider text-ember dark:text-sky-400;
   }
 
-  /* Card Styles - Consistent layout, only colors change */
+  /* Card Styles - Bento Grid with Ember Glow (matches dark mode pattern) */
   .card-interactive {
-    @apply relative rounded-lg p-6 bg-white border border-transparent shadow-lift hover:shadow-xl hover:border-indigo/20 transition-all dark:bg-slate-900/50 dark:hover:bg-slate-900/50 dark:border-slate-800/50 dark:hover:border-sky-400/50 dark:shadow-none dark:hover:shadow-glow-md;
+    @apply relative rounded-lg p-6 bg-[#F4F4F5] border border-transparent shadow-bento hover:border-ember/50 hover:shadow-ember-glow-md transition-all dark:bg-slate-900/50 dark:hover:bg-slate-900/50 dark:border-slate-800/50 dark:hover:border-sky-400/50 dark:shadow-none dark:hover:shadow-glow-md;
   }
 
   .card-static {
-    @apply rounded-lg p-4 bg-white border border-transparent shadow-lift hover:shadow-xl hover:border-indigo/20 transition-all dark:bg-transparent dark:shadow-none dark:border-slate-800/50 dark:hover:border-sky-400/30 dark:hover:shadow-glow-md;
+    @apply rounded-lg p-4 bg-[#F4F4F5] border border-transparent shadow-bento hover:border-ember/50 hover:shadow-ember-glow-md transition-all dark:bg-transparent dark:shadow-none dark:border-slate-800/50 dark:hover:border-sky-400/30 dark:hover:shadow-glow-md;
   }
 
-  /* Badge Styles - Indigo brand color for tech */
-  .badge-tech {
-    @apply inline-flex items-center px-3 py-1 rounded-md bg-indigo/10 text-sm font-medium text-indigo font-mono border border-indigo/20 dark:bg-slate-800/50 dark:text-teal-400 dark:border-slate-700/50;
+  /* Badge Styles - Consistent border pattern for light and dark */
+  .badge-primary {
+    @apply inline-flex items-center px-3 py-1 rounded-md bg-white text-sm font-medium text-[#3F3F46] font-mono border border-[#E4E4E7] dark:bg-slate-800/50 dark:text-teal-400 dark:border-slate-700/50;
   }
 
   .badge-skill {
-    @apply inline-flex items-center px-3 py-1 rounded-md bg-gray-100 text-sm text-gray-700 font-mono border border-platinum dark:bg-slate-800/50 dark:text-slate-300 dark:border-slate-700/50;
+    @apply inline-flex items-center px-3 py-1 rounded-md bg-white text-sm text-[#3F3F46] font-mono border border-[#E4E4E7] dark:bg-slate-800/50 dark:text-slate-300 dark:border-slate-700/50;
   }
 
   .badge-impact {
-    @apply inline-flex items-center px-3 py-1 rounded-md bg-cyan/10 text-sm font-medium text-cyan font-mono border border-cyan/20 dark:bg-teal-400/10 dark:text-teal-400 dark:border-teal-400/30;
+    @apply inline-flex items-center px-3 py-1 rounded-md bg-white text-sm font-medium text-[#3F3F46] font-mono border border-[#E4E4E7] dark:bg-teal-400/10 dark:text-teal-400 dark:border-teal-400/30;
   }
 
-  /* Text Color Utilities - "Cognitive Clarity" palette */
+  /* Text Color Utilities - "Kinetic Paper" palette */
   .text-heading {
-    @apply text-charcoal dark:text-slate-50;
+    @apply text-[#18181B] dark:text-slate-50;
   }
 
   .text-subheading {
-    @apply text-indigo dark:text-sky-400;
+    @apply text-ember dark:text-sky-400;
   }
 
   .text-body {
-    @apply text-gray-600 dark:text-slate-300;
+    @apply text-[#18181B]/80 dark:text-slate-300;
   }
 
   .text-muted {
-    @apply text-gray-500 dark:text-slate-400;
+    @apply text-[#71717A] dark:text-slate-400;
   }
 
   .text-highlight {
-    @apply text-cyan dark:text-teal-400;
+    @apply text-[#3F3F46] dark:text-teal-400;
   }
 
-  /* Button/CTA - Indigo Insight brand color */
+  /* Button/CTA - Ember brand color with professional hover */
   .btn-primary {
-    @apply inline-flex items-center px-5 py-2.5 border border-indigo/30 text-sm font-medium rounded-md text-white bg-indigo hover:bg-indigo-hover shadow-lift hover:shadow-lift-md transition-all dark:border-sky-400/30 dark:text-slate-50 dark:bg-sky-400/10 dark:hover:bg-sky-400/20 dark:hover:shadow-glow-sm;
+    @apply inline-flex items-center px-5 py-2.5 border border-ember/30 text-sm font-medium rounded-md text-white bg-ember hover:bg-ember-hover shadow-ember-glow hover:shadow-ember-glow-md transition-all dark:border-sky-400/30 dark:text-slate-50 dark:bg-sky-400/10 dark:hover:bg-sky-400/20 dark:hover:shadow-glow-sm;
   }
 
-  /* Navigation - Indigo brand indicators */
+  /* Navigation - Ember brand indicators */
   .nav-indicator {
-    @apply mr-3 h-px w-6 bg-platinum dark:bg-slate-700 transition-all group-hover:w-12 group-hover:bg-indigo dark:group-hover:bg-sky-400 dark:group-hover:shadow-glow-sm motion-reduce:transition-none;
+    @apply mr-3 h-px w-6 bg-[#E4E4E7] dark:bg-slate-700 transition-all group-hover:w-12 group-hover:bg-ember dark:group-hover:bg-sky-400 dark:group-hover:shadow-glow-sm motion-reduce:transition-none;
   }
 
   .nav-text {
-    @apply text-xs font-semibold uppercase tracking-wider text-gray-500 dark:text-slate-400 group-hover:text-indigo dark:group-hover:text-sky-400;
+    @apply text-xs font-semibold uppercase tracking-wider text-[#52525B] dark:text-slate-400 group-hover:text-ember dark:group-hover:text-sky-400;
   }
 
-  /* Social/External Links - Indigo brand color */
+  /* Social/External Links - Ember brand color */
   .social-link {
-    @apply block text-gray-400 dark:text-slate-500 hover:text-indigo dark:hover:text-sky-400 transition-colors;
+    @apply block text-steel dark:text-slate-500 hover:text-ember dark:hover:text-sky-400 transition-colors;
   }
 
   .external-link {
-    @apply inline-flex items-center gap-2 text-indigo dark:text-sky-400 hover:text-indigo-hover dark:hover:text-teal-400 font-semibold transition-colors;
+    @apply inline-flex items-center gap-2 text-ember dark:text-sky-400 hover:text-ember-hover dark:hover:text-teal-400 font-semibold transition-colors;
   }
 
   .external-link-sm {
-    @apply inline-flex items-center gap-2 text-indigo dark:text-sky-400 hover:text-indigo-hover dark:hover:text-teal-400 text-sm font-medium transition-colors;
+    @apply inline-flex items-center gap-2 text-ember dark:text-sky-400 hover:text-ember-hover dark:hover:text-teal-400 text-sm font-medium transition-colors;
   }
 }

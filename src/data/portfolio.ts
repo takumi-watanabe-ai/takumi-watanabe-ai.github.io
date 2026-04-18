@@ -1,13 +1,13 @@
 export const portfolioData = {
   metadata: {
-    title: 'Takumi Watanabe - AI Engineer | Production LLM & RAG Systems Expert',
+    title: 'Takumi Watanabe - AI Engineer | Production Agentic AI & RAG Systems',
     description:
       '15 years software engineering experience, specializing in production LLM and RAG systems. Expert in Python, LangChain, AWS, agentic workflows, hybrid search, and LLM evaluation. Live systems at ragnosis.app.',
   },
 
   header: {
     name: 'Takumi Watanabe',
-    title: 'AI Engineer | Production LLM & RAG Systems Expert',
+    title: 'AI Engineer | Production Agentic AI & RAG Systems',
     tagline:
       'Specializing in production LLM and RAG systems using Python, LangChain, and AWS. Expert in agentic workflows, hybrid search, and LLM evaluation.',
     email: 'w.takumi.cs@gmail.com',
@@ -17,7 +17,7 @@ export const portfolioData = {
       kaggle: 'https://www.kaggle.com/webdevbadger',
     },
     highlights: [
-      { label: 'Live RAG System', value: 'ragnosis.app' },
+      { label: 'Live RAG System', value: 'ragnosis.app', link: 'https://www.ragnosis.app' },
       { label: 'AWS GenAI Certified', value: 'Professional + Early Adopter' },
       { label: '15 Years Experience', value: 'Full-stack to AI systems' },
     ],
@@ -92,7 +92,7 @@ export const portfolioData = {
     {
       title: 'RAGnosis: Agentic RAG Intelligence Platform',
       description:
-        'Production agentic RAG system demonstrating sophisticated patterns beyond basic vector search.\n\n**Core Features:**\n• **Agentic query planning** - LLM analyzes intent and routes to right sources\n• **Hybrid search** - RRF fusion (60% vector + 40% keyword) with optional cross-encoder reranking\n• **Real-time data** - Processes 3K+ doc chunks, integrates 4K+ HuggingFace models and GitHub repos\n• **Evaluation framework** - RAGAS with 28 test questions, 0.90 faithfulness score\n\n**Tech Stack:** Next.js, Supabase pgvector (HNSW indexing), Deno edge functions, Ollama',
+        'Production agentic RAG system demonstrating sophisticated patterns beyond basic vector search.\n\n**Core Features:**\n• **Agentic query planning** - LLM analyzes intent and routes to right sources\n• **Hybrid search** - **RRF** fusion (60% vector + 40% keyword) with optional cross-encoder reranking\n• **Real-time data** - Processes 3K+ doc chunks, integrates 4K+ HuggingFace models and GitHub repos\n• **Evaluation framework** - **RAGAS** with 28 test questions, 0.90 faithfulness score\n\n**Tech Stack:** Next.js, Supabase **pgvector** (**HNSW** indexing), Deno edge functions, Ollama',
       technologies: ['pgvector', 'HNSW', 'RRF Fusion', 'Supabase', 'Ollama', 'Next.js', 'Python', 'RAGAS', 'Cross-Encoder', 'Agentic Workflows'],
       link: 'https://www.ragnosis.app',
       githubLink: 'https://github.com/takumi-watanabe-ai/RAGnosis',
@@ -101,7 +101,7 @@ export const portfolioData = {
     {
       title: 'Advanced RAG System with Hybrid Search & Async Processing',
       description:
-        'Production-grade RAG system with **Celery-based async** document processing pipeline.\n\n**Architecture:**\n• **Hybrid search** - Semantic (Qdrant) + BM25 with weighted fusion (70/30)\n• **Cross-encoder reranking** - ms-marco-MiniLM for precision\n• **Distributed system** - FastAPI, Celery workers, Redis, PostgreSQL, Flower monitoring\n• **Auto-monitoring** - Hash-based change detection every 5 min\n\n**Tech Stack:** Qdrant, fastembed (bge-small-en-v1.5), Ollama, Streamlit, PDF table extraction',
+        'Production-grade RAG system with **Celery-based async** document processing pipeline.\n\n**Architecture:**\n• **Hybrid search** - Semantic (**Qdrant**) + **BM25** with weighted fusion (70/30)\n• **Cross-encoder reranking** - **ms-marco-MiniLM** for precision\n• **Distributed system** - **FastAPI**, Celery workers, **Redis**, **PostgreSQL**, Flower monitoring\n• **Auto-monitoring** - Hash-based change detection every 5 min\n\n**Tech Stack:** **Qdrant**, **fastembed** (bge-small-en-v1.5), **Ollama**, Streamlit, PDF table extraction',
       technologies: ['Qdrant', 'Celery', 'FastAPI', 'BM25', 'Cross-Encoder', 'PostgreSQL', 'Redis', 'Ollama', 'fastembed', 'Streamlit'],
       link: null,
       impact: 'Scalable RAG architecture processing PDFs with async pipelines and hybrid retrieval',
@@ -109,7 +109,7 @@ export const portfolioData = {
     {
       title: 'Agentic Web Research Agent with LangGraph',
       description:
-        'Autonomous research agent using **LangGraph** for multi-step reasoning and orchestration.\n\n**Key Features:**\n• Autonomously breaks down complex queries into sub-questions\n• Searches web via **Tavily API**, scrapes content with BeautifulSoup\n• Synthesizes findings into comprehensive reports with citations\n• Stateful agent workflows with planning, execution, and synthesis phases\n\n**Tech Stack:** OpenRouter (Claude, GPT-4), FastAPI backend, full research transparency with step-by-step traces',
+        'Autonomous research agent using **LangGraph** for multi-step reasoning and orchestration.\n\n**Key Features:**\n• Autonomously breaks down complex queries into sub-questions\n• Searches web via **Tavily API**, scrapes content with **BeautifulSoup**\n• Synthesizes findings into comprehensive reports with citations\n• Stateful agent workflows with planning, execution, and synthesis phases\n\n**Tech Stack:** **OpenRouter** (**Claude**, **GPT-4**), **FastAPI** backend, full research transparency with step-by-step traces',
       technologies: ['LangGraph', 'OpenRouter', 'Tavily', 'BeautifulSoup', 'FastAPI', 'Python', 'Autonomous Agents'],
       link: null,
       impact: 'Autonomous research system demonstrating multi-agent workflows and LLM orchestration',
@@ -117,7 +117,7 @@ export const portfolioData = {
     {
       title: 'Agentic Code Review: Privacy-First Security Analysis GitHub Action',
       description:
-        'GitHub Action for **autonomous security analysis** of pull requests using **self-hosted Ollama** (code never leaves infrastructure).\n\n**Security Analysis:**\n• OWASP Top 10 vulnerabilities, hardcoded secrets, authentication issues, injection attacks\n• CodeLlama/Llama 3.1 for deep code analysis\n• Actionable findings as PR comments with severity ratings (high/medium/low)\n\n**Enterprise-Ready:** Privacy-first architecture (SOC2/HIPAA compliant), no external API calls, configurable focus areas and severity thresholds',
+        'GitHub Action for **autonomous security analysis** of pull requests using **self-hosted Ollama** (code never leaves infrastructure).\n\n**Security Analysis:**\n• **OWASP Top 10** vulnerabilities, hardcoded secrets, authentication issues, injection attacks\n• **CodeLlama/Llama 3.1** for deep code analysis\n• Actionable findings as PR comments with severity ratings (high/medium/low)\n\n**Enterprise-Ready:** Privacy-first architecture (**SOC2/HIPAA** compliant), no external API calls, configurable focus areas and severity thresholds',
       technologies: ['Ollama', 'CodeLlama', 'GitHub Actions', 'Python', 'Security Analysis', 'Autonomous Agents'],
       link: null,
       impact: 'Privacy-preserving agentic security analysis for code review automation',
@@ -287,7 +287,7 @@ export const portfolioData = {
   ],
 
   footer: {
-    text: `Available for AI engineering consulting. Let's build production-ready intelligent systems together. © ${new Date().getFullYear()} Takumi Watanabe`,
+    text: `Available for AI engineering consulting. Let's build production-ready intelligent systems together.\n© ${new Date().getFullYear()} Takumi Watanabe`,
     link: null,
   },
 };

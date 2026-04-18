@@ -12,24 +12,28 @@ export default {
         mono: ['Geist Mono', 'ui-monospace', 'SFMono-Regular', ...defaultTheme.fontFamily.mono],
       },
 
-      // "Cognitive Clarity" - AI Specialist Color Palette (2026)
+      // "Kinetic Paper" - Light Mode AI Specialist Palette (2026)
       colors: {
-        // Light Theme Colors
-        alabaster: '#F9FAFB', // Primary background - soft, premium white
-        platinum: '#E5E7EB', // Borders and dividers
-        charcoal: '#111827', // Primary text - ink black
+        // Light Theme: "Kinetic Paper" - Premium AI Research Lab Feel
+        coconut: '#FDFDFC', // Main background - warm white
+        fog: '#F4F4F5', // Secondary UI - card backgrounds
+        ink: '#1A1A1E', // Deep text - headlines and body
+        steel: '#71717A', // Technical accent - metadata, RAG sources
 
-        // Brand Colors
-        indigo: {
-          DEFAULT: '#4F46E5', // Indigo Insight - primary brand
-          hover: '#4338CA', // Deeper indigo
-        },
-        cyan: {
-          DEFAULT: '#0891B2', // System Cyan - technical/data markers
-          hover: '#0E7490', // Deeper cyan
+        // Primary Brand: "Agentic" Orange
+        ember: {
+          DEFAULT: '#FF5F1F', // Neon Persimmon - action color
+          hover: '#E5541C', // Slightly deeper orange
+          glow: 'rgba(255, 95, 31, 0.02)', // 2% glow for hover states
         },
 
-        // Dark Theme Colors (keep existing)
+        // Complementary Accent
+        teal: {
+          DEFAULT: '#0D9488', // Deep Teal - success/verified states
+          hover: '#0F766E', // Deeper teal
+        },
+
+        // Dark Theme Colors (existing - can be updated to Obsidian Ember later)
         primary: {
           DEFAULT: '#38bdf8', // sky-400
           hover: '#0ea5e9', // sky-500
@@ -63,10 +67,17 @@ export default {
         glass: '8px', // Modern glassy effect
       },
       boxShadow: {
+        // Light Theme: Kinetic Paper - Ember glow matching dark mode intensity
+        'ember-glow': '0 0 0 1px rgba(255, 95, 31, 0.08), 0 2px 4px rgba(255, 95, 31, 0.04)',
+        'ember-glow-md': '0 0 20px rgba(255, 95, 31, 0.4)', // Matches dark mode glow intensity
+        'bento': '0 1px 2px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.02)', // Subtle card shadow
+        'bento-hover': '0 4px 8px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(255, 95, 31, 0.08)', // Hover with ember hint
+
+        // Dark Theme: Sky-400 glow
         'glow-sm': '0 0 10px rgba(56, 189, 248, 0.3)',
-        'glow-md': '0 0 20px rgba(56, 189, 248, 0.4)',
+        'glow-md': '0 0 20px rgba(56, 189, 248, 0.4)', // Blue glow for dark mode
         'glow-accent': '0 0 15px rgba(45, 212, 191, 0.3)',
-        'lift': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)', // Card lift effect
+        'lift': '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
         'lift-md': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
       },
       backgroundImage: {

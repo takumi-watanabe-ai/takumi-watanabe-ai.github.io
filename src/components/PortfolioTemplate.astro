@@ -27,12 +27,12 @@ function parseMarkdown(text: string): string {
     <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
       <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
     </svg>
-    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-sky-400" fill="currentColor" viewBox="0 0 20 20">
+    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-ember" fill="currentColor" viewBox="0 0 20 20">
       <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
     </svg>
   </button>
 
-  <div class="min-h-screen bg-alabaster dark:bg-slate-950 transition-colors duration-200">
+  <div class="min-h-screen bg-coconut dark:bg-slate-950 transition-colors duration-200">
     <div class="mx-auto max-w-7xl px-6 py-12 sm:px-8 lg:px-12 lg:py-16">
       <div class="lg:flex lg:gap-12 lg:items-start">
 
@@ -56,7 +56,11 @@ function parseMarkdown(text: string): string {
                     <svg class="h-5 w-5 text-highlight flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                       <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                     </svg>
-                    <span class="text-gray-700 dark:text-slate-200"><strong class="text-gray-900 dark:text-slate-50">{highlight.label}</strong> - {highlight.value}</span>
+                    <span class="text-gray-700 dark:text-slate-200">
+                      <strong class="text-gray-900 dark:text-slate-50">{highlight.label}</strong> - {highlight.link ? (
+                        <a href={highlight.link} target="_blank" rel="noreferrer" class="text-ember hover:text-ember-hover dark:text-sky-400 dark:hover:text-teal-400 hover:underline transition-colors">{highlight.value}</a>
+                      ) : highlight.value}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -182,7 +186,7 @@ function parseMarkdown(text: string): string {
                       </div>
                       <div class="mt-1 text-base font-medium text-subheading">
                         {job.companyUrl ? (
-                          <a href={job.companyUrl} target="_blank" rel="noreferrer" class="hover:text-indigo-hover dark:hover:text-teal-400 hover:underline transition-colors">
+                          <a href={job.companyUrl} target="_blank" rel="noreferrer" class="hover:text-ember-hover dark:hover:text-teal-400 hover:underline transition-colors">
                             {job.company}
                           </a>
                         ) : (
@@ -193,7 +197,7 @@ function parseMarkdown(text: string): string {
                       <ul class="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
                         {job.technologies.map((tech: string) => (
                           <li>
-                            <span class="badge-tech">
+                            <span class="badge-primary">
                               {tech}
                             </span>
                           </li>
@@ -254,7 +258,7 @@ function parseMarkdown(text: string): string {
                       <ul class="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
                         {project.technologies.map((tech: string) => (
                           <li>
-                            <span class="badge-skill">
+                            <span class="badge-primary">
                               {tech}
                             </span>
                           </li>
@@ -301,7 +305,7 @@ function parseMarkdown(text: string): string {
                   <ul class="flex flex-wrap gap-2">
                     {area.skills.map((skill: string) => (
                       <li>
-                        <span class="badge-skill">
+                        <span class="badge-primary">
                           {skill}
                         </span>
                       </li>
@@ -319,7 +323,7 @@ function parseMarkdown(text: string): string {
             </div>
             <div class="relative">
               <!-- Timeline line -->
-              <div class="absolute left-[48px] top-0 bottom-0 w-0.5 bg-platinum dark:bg-slate-800" aria-hidden="true"></div>
+              <div class="absolute left-[48px] top-0 bottom-0 w-0.5 bg-fog dark:bg-slate-800" aria-hidden="true"></div>
 
               <div class="space-y-8">
                 {certifications.map((cert: any) => (
@@ -354,7 +358,7 @@ function parseMarkdown(text: string): string {
                           </h3>
                           <p class="text-sm text-body mt-1">{cert.issuer}</p>
                         </div>
-                        <time class="text-sm font-medium text-highlight whitespace-nowrap">
+                        <time class="text-sm font-medium text-muted whitespace-nowrap">
                           {cert.earnedDate}
                         </time>
                       </div>
@@ -366,10 +370,10 @@ function parseMarkdown(text: string): string {
           </section>
 
           <!-- Footer -->
-          <footer class="mt-20 pt-8 border-t border-platinum dark:border-slate-800 text-sm text-muted">
-            <p>
+          <footer class="mt-20 pt-8 border-t border-fog dark:border-slate-800 text-sm text-muted">
+            <p class="whitespace-pre-line">
               {footer.text} {footer.link && (
-                <a href={footer.link.url} class="text-subheading hover:text-indigo-hover dark:hover:text-teal-400 font-medium transition-colors">{footer.link.text}</a>
+                <a href={footer.link.url} class="text-subheading hover:text-ember-hover dark:hover:text-teal-400 font-medium transition-colors">{footer.link.text}</a>
               )}
             </p>
           </footer>
@@ -449,17 +453,17 @@ function parseMarkdown(text: string): string {
         const text = link.querySelector('.nav-text');
         if (link.getAttribute('href') === `#${current}`) {
           if (indicator) {
-            indicator.classList.add('!w-12', '!bg-blue-600', 'dark:!bg-sky-400');
+            indicator.classList.add('!w-12', '!bg-ember', 'dark:!bg-sky-400');
           }
           if (text) {
-            text.classList.add('!text-blue-600', 'dark:!text-sky-400');
+            text.classList.add('!text-ember', 'dark:!text-sky-400');
           }
         } else {
           if (indicator) {
-            indicator.classList.remove('!w-12', '!bg-blue-600', 'dark:!bg-sky-400');
+            indicator.classList.remove('!w-12', '!bg-ember', 'dark:!bg-sky-400');
           }
           if (text) {
-            text.classList.remove('!text-blue-600', 'dark:!text-sky-400');
+            text.classList.remove('!text-ember', 'dark:!text-sky-400');
           }
         }
       });
