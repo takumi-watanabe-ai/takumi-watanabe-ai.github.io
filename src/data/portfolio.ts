@@ -34,7 +34,7 @@ export const portfolioData = {
     {
       period: 'July 2023 — Present',
       role: 'Principal Consultant',
-      company: 'GenArchitect (genarchitect.ai)',
+      company: 'GenArchitect',
       companyUrl: 'https://genarchitect.ai',
       description:
         'Shipped **production LLM and RAG systems** with measurable impact:\n\n• Deployed **enterprise RAG solution** processing **10K+ documents** with continuous evaluation and benchmarking, achieving **30% accuracy improvement** over baseline and **sub-second response times**\n• Architected **agentic AI system** with tool-calling, multi-turn reasoning, and context management enabling autonomous task completion and intelligent user interactions\n• Implemented **production infrastructure** with FastAPI microservices, Celery distributed workers, and PostgreSQL metadata storage achieving **99.9% uptime** for mission-critical applications\n• Integrated **local LLM inference** with Ollama for privacy-first answer generation, eliminating external API costs while ensuring data security compliance for sensitive document workflows',
