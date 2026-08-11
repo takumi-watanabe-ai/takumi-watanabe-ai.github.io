@@ -11,8 +11,9 @@ const { metadata, header, about, experience, projects, education, expertise, cer
 // Convert markdown-like syntax to HTML
 function parseMarkdown(text: string): string {
   return text
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold text
-    .replace(/\n/g, '<br>'); // Line breaks
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-ember hover:text-ember-hover dark:text-sky-400 dark:hover:text-teal-400 hover:underline transition-colors">$1</a>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\n/g, '<br>');
 }
 ---
 
@@ -39,12 +40,24 @@ function parseMarkdown(text: string): string {
         <!-- Left Column - Fixed on desktop -->
         <header class="lg:w-2/5 lg:sticky lg:top-16 lg:py-8">
           <div>
-            <h1 class="text-3xl font-bold tracking-tight text-heading sm:text-4xl">
-              {header.name}
-            </h1>
-            <h2 class="mt-4 text-xl font-semibold tracking-tight text-subheading">
-              {header.title}
-            </h2>
+            <div class="flex items-center gap-6 mb-6">
+              <img
+                src="/linkedin-profile.jpg"
+                alt="Takumi Watanabe"
+                width="112"
+                height="112"
+                class="object-cover object-center rounded-full flex-shrink-0"
+                style="width: 112px; height: 112px; min-width: 112px;"
+              />
+              <div>
+                <h1 class="text-3xl font-bold tracking-tight text-heading sm:text-4xl">
+                  {header.name}
+                </h1>
+                <h2 class="mt-1 text-base font-semibold tracking-tight text-subheading">
+                  {header.title}
+                </h2>
+              </div>
+            </div>
             <p class="mt-6 max-w-lg text-lg leading-relaxed text-body">
               {header.tagline}
             </p>
@@ -321,17 +334,14 @@ function parseMarkdown(text: string): string {
             <div class="section-header-mobile">
               <h2 class="section-header-title">Certifications</h2>
             </div>
-            <div class="relative">
-              <!-- Timeline line -->
-              <div class="absolute left-[48px] top-0 bottom-0 w-0.5 bg-fog dark:bg-slate-800" aria-hidden="true"></div>
-
+            <div>
               <div class="space-y-8">
                 {certifications.map((cert: any) => (
-                  <div class="relative flex gap-6 items-center group transition-colors">
+                  <div class="flex gap-6 items-center group transition-colors">
                     <!-- Badge Image -->
-                    <div class="flex-shrink-0 w-24 h-24 relative">
+                    <div class="flex-shrink-0 w-24 h-24 flex items-center justify-center">
                       {cert.credlyUrl ? (
-                        <a href={cert.credlyUrl} target="_blank" rel="noreferrer" class="block w-full h-full" aria-label={`View ${cert.name} on Credly`}>
+                        <a href={cert.credlyUrl} target="_blank" rel="noreferrer" class="flex items-center justify-center w-full h-full" aria-label={`View ${cert.name} on Credly`}>
                           <img
                             src={cert.badgeImage}
                             alt={cert.name}
@@ -370,6 +380,7 @@ function parseMarkdown(text: string): string {
           </section>
 
           <!-- Footer -->
+
           <footer class="mt-20 pt-8 border-t border-fog dark:border-slate-800 text-sm text-muted">
             <p class="whitespace-pre-line">
               {footer.text} {footer.link && (
@@ -471,5 +482,29 @@ function parseMarkdown(text: string): string {
 
     window.addEventListener('scroll', highlightNav);
     highlightNav();
+
+    // Scroll-reveal: fade + slide-up sections as they enter viewport
+    // Skipped entirely when user prefers reduced motion
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const revealEls = document.querySelectorAll('section[id], .reveal');
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              (entry.target as HTMLElement).style.opacity = '1';
+              (entry.target as HTMLElement).style.transform = 'translateY(0)';
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.08 }
+      );
+      revealEls.forEach((el) => {
+        (el as HTMLElement).style.opacity = '0';
+        (el as HTMLElement).style.transform = 'translateY(24px)';
+        (el as HTMLElement).style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        observer.observe(el);
+      });
+    }
   </script>
 </PortfolioLayout>

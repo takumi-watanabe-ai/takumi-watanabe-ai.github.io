@@ -12,9 +12,11 @@ interface Props {
 const { metadata = {} } = Astro.props;
 
 const {
-  title = 'Takumi - Principal Software Engineer',
-  description = 'Principal Software Engineer specializing in cloud architecture, distributed systems, and scalable web applications.',
+  title = 'Takumi Watanabe - AI Engineer | Agentic AI & RAG',
+  description = '13 years software engineering experience, specializing in production LLM and RAG systems. Expert in Python, LangChain, AWS, agentic workflows, hybrid search, and LLM evaluation.',
 } = metadata;
+
+const ogImage = `${Astro.site}linkedin-profile.jpg`;
 ---
 
 <!DOCTYPE html>
@@ -28,10 +30,13 @@ const {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={Astro.site} />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <title>{title}</title>
   </head>

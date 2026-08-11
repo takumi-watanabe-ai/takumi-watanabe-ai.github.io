@@ -1,13 +1,13 @@
 export const portfolioData = {
   metadata: {
-    title: 'Takumi Watanabe - AI Engineer | Production Agentic AI & RAG Systems',
+    title: 'Takumi Watanabe - AI Engineer | Agentic AI & RAG',
     description:
-      '15 years software engineering experience, specializing in production LLM and RAG systems. Expert in Python, LangChain, AWS, agentic workflows, hybrid search, and LLM evaluation. Live systems at ragnosis.app.',
+      '13 years software engineering experience, specializing in production LLM and RAG systems. Expert in Python, LangChain, AWS, agentic workflows, hybrid search, and LLM evaluation. Live systems at ragnosis.app.',
   },
 
   header: {
     name: 'Takumi Watanabe',
-    title: 'AI Engineer | Production Agentic AI & RAG Systems',
+    title: 'AI Engineer | Agentic AI & RAG',
     tagline:
       'Specializing in production LLM and RAG systems using Python, LangChain, and AWS. Expert in agentic workflows, hybrid search, and LLM evaluation.',
     email: 'w.takumi.cs@gmail.com',
@@ -19,21 +19,21 @@ export const portfolioData = {
     highlights: [
       { label: 'Live RAG System', value: 'ragnosis.app', link: 'https://www.ragnosis.app' },
       { label: 'AWS GenAI Certified', value: 'Professional + Early Adopter' },
-      { label: '15 Years Experience', value: 'Full-stack to AI systems' },
+      { label: '13 Years Experience', value: 'Full-stack to AI systems' },
     ],
   },
 
   about: [
-    "I'm an **AI Engineer** with **15 years of software engineering experience**, now specializing in **production LLM and RAG systems**. I architect and deploy enterprise-grade agentic AI applications using **Python**, **LangChain**, and **AWS**, with full-stack ownership from design through production deployment.",
+    "I'm an **AI Engineer** with **13 years of software engineering experience**, now specializing in **production LLM and RAG systems**. I architect and deploy enterprise-grade agentic AI applications using **Python**, **LangChain**, and **AWS**, with full-stack ownership from design through production deployment.",
     "My work focuses on building **measurable, production-ready systems** rather than proofs of concept. I've deployed enterprise RAG solutions processing thousands of documents with continuous evaluation frameworks, implemented privacy-first architectures using local LLM inference, and built distributed systems achieving enterprise-grade reliability. Before specializing in AI, I spent years building scalable cloud infrastructure and microservices at companies like BlackBerry and Microsoft.",
-    "**<a href='https://www.ragnosis.app' target='_blank' rel='noreferrer'>RAGnosis</a>** is my flagship project—a live agentic RAG platform demonstrating sophisticated patterns beyond basic vector search. It combines agentic query planning, hybrid search with RRF fusion, automated quality evaluation via RAGAS, and real-time integration with HuggingFace models and GitHub repositories. The system showcases production-ready techniques for building intelligent, evaluated RAG applications.",
-    "**AWS Certified**: Generative AI Developer (Professional + Early Adopter) | Machine Learning Specialty\n\n**Available for consulting**: Enterprise RAG implementation, agentic AI systems, LLM evaluation frameworks, and privacy-first architectures. Particularly interested in projects requiring measurable quality improvements, hybrid search optimization, and production deployment expertise.\n\n**Bilingual**: English and Japanese",
+    "**<a href='https://www.ragnosis.app' target='_blank' rel='noreferrer'>RAGnosis</a>** is my flagship project, a live agentic RAG platform demonstrating sophisticated patterns beyond basic vector search. It combines agentic query planning, hybrid search with RRF fusion, automated quality evaluation via RAGAS, and real-time integration with HuggingFace models and GitHub repositories. The system showcases production-ready techniques for building intelligent, evaluated RAG applications.",
+    "**[AWS Certified](#certifications)**: Generative AI Developer (Professional + Early Adopter) | Machine Learning Specialty\n\n**Available for consulting**: Enterprise RAG implementation, agentic AI systems, LLM evaluation frameworks, and privacy-first architectures. Particularly interested in projects requiring measurable quality improvements, hybrid search optimization, and production deployment expertise.\n\n**Bilingual**: English and Japanese",
   ],
 
   experience: [
     {
       period: 'July 2023 — Present',
-      role: 'Principal Consultant',
+      role: 'Principal AI Engineer',
       company: 'GenArchitect',
       companyUrl: 'https://genarchitect.ai',
       description:
