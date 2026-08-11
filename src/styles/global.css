@@ -90,15 +90,30 @@
 
   /* Badge Styles - Consistent border pattern for light and dark */
   .badge-primary {
-    @apply inline-flex items-center px-3 py-1 rounded-md bg-white text-sm font-medium text-[#3F3F46] font-mono border border-[#E4E4E7] dark:bg-slate-800/50 dark:text-teal-400 dark:border-slate-700/50;
+    @apply inline-flex items-center px-3 py-1 rounded-md bg-white text-sm font-medium text-[#3F3F46] font-mono border border-[#E4E4E7] dark:bg-slate-800/50 dark:text-teal-400 dark:border-slate-700/50 transition-all duration-150;
   }
 
   .badge-skill {
-    @apply inline-flex items-center px-3 py-1 rounded-md bg-white text-sm text-[#3F3F46] font-mono border border-[#E4E4E7] dark:bg-slate-800/50 dark:text-slate-300 dark:border-slate-700/50;
+    @apply inline-flex items-center px-3 py-1 rounded-md bg-white text-sm text-[#3F3F46] font-mono border border-[#E4E4E7] dark:bg-slate-800/50 dark:text-slate-300 dark:border-slate-700/50 transition-all duration-150;
+  }
+
+  /* Shift glow from card to tag on tag hover */
+  .badge-primary:hover {
+    border-color: rgba(255, 95, 31, 0.5);
+    box-shadow: 0 0 20px rgba(255, 95, 31, 0.4);
+  }
+  .badge-skill:hover {
+    border-color: rgba(255, 95, 31, 0.5);
+    box-shadow: 0 0 20px rgba(255, 95, 31, 0.4);
+  }
+.dark .badge-primary:hover,
+  .dark .badge-skill:hover {
+    border-color: rgba(56, 189, 248, 0.5);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
   }
 
   .badge-impact {
-    @apply inline-flex items-center px-3 py-1 rounded-md bg-white text-sm font-medium text-[#3F3F46] font-mono border border-[#E4E4E7] dark:bg-teal-400/10 dark:text-teal-400 dark:border-teal-400/30;
+    @apply block text-sm font-medium text-ember dark:text-sky-400;
   }
 
   /* Text Color Utilities - "Kinetic Paper" palette */

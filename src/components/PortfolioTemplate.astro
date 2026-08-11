@@ -189,22 +189,29 @@ function parseMarkdown(text: string): string {
                 {experience.map((job: any) => (
                   <li>
                     <div class="group card-interactive">
-                      <div class="flex items-baseline justify-between gap-4 mb-1">
-                        <h3 class="text-lg font-semibold text-heading">
-                          {job.role}
-                        </h3>
-                        <div class="text-sm font-medium text-muted whitespace-nowrap">
-                          {job.period}
-                        </div>
-                      </div>
-                      <div class="mt-1 text-base font-medium text-subheading">
-                        {job.companyUrl ? (
-                          <a href={job.companyUrl} target="_blank" rel="noreferrer" class="hover:text-ember-hover dark:hover:text-teal-400 hover:underline transition-colors">
-                            {job.company}
-                          </a>
-                        ) : (
-                          job.company
+                      <div class="flex items-center gap-4 mb-1">
+                        {job.logo && (
+                          <img src={job.logo} alt={job.company} width="72" height="72" class="object-contain flex-shrink-0 opacity-90" style="width: 72px; height: 72px;" loading="lazy" />
                         )}
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-baseline justify-between gap-4">
+                            <h3 class="text-lg font-semibold text-heading">
+                              {job.role}
+                            </h3>
+                            <div class="text-sm font-medium text-muted whitespace-nowrap">
+                              {job.period}
+                            </div>
+                          </div>
+                          <div class="mt-0.5 text-base font-medium text-subheading">
+                            {job.companyUrl ? (
+                              <a href={job.companyUrl} target="_blank" rel="noreferrer" class="hover:text-ember-hover dark:hover:text-teal-400 hover:underline transition-colors">
+                                {job.company}
+                              </a>
+                            ) : (
+                              job.company
+                            )}
+                          </div>
+                        </div>
                       </div>
                       <p class="mt-3 text-body leading-relaxed" set:html={parseMarkdown(job.description)} />
                       <ul class="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
@@ -239,11 +246,26 @@ function parseMarkdown(text: string): string {
             <div class="space-y-6">
               {education.map((edu: any) => (
                 <div class="card-static">
-                  <div class="flex items-baseline justify-between gap-4">
-                    <span class="text-base font-semibold text-heading">{edu.degree}</span>
-                    <span class="text-sm text-muted whitespace-nowrap">{edu.year}</span>
+                  <div class="flex items-center gap-4 flex-wrap sm:flex-nowrap">
+                    {edu.logo && (
+                      <img
+                        src={edu.logo}
+                        alt={edu.institution}
+                        width="72"
+                        height="72"
+                        class="object-contain flex-shrink-0"
+                        style="width: 72px; height: 72px;"
+                        loading="lazy"
+                      />
+                    )}
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-baseline justify-between gap-4">
+                        <span class="text-base font-semibold text-heading">{edu.degree}</span>
+                        <span class="text-sm text-muted whitespace-nowrap">{edu.year}</span>
+                      </div>
+                      <div class="text-base text-body mt-1">{edu.institution}</div>
+                    </div>
                   </div>
-                  <div class="text-base text-body mt-1">{edu.institution}</div>
                 </div>
               ))}
             </div>
@@ -259,14 +281,42 @@ function parseMarkdown(text: string): string {
                 {projects.map((project: any) => (
                   <li>
                     <div class="group card-interactive">
-                      <h3 class="text-lg font-semibold text-gray-900 dark:text-slate-50">
-                        {project.title}
-                      </h3>
-                      {project.impact && (
-                        <div class="mt-2 badge-impact">
-                          {project.impact}
+                      <div class="flex items-center gap-4 mb-1">
+                        {project.logos && project.logos.length === 1 && (
+                          <img
+                            src={project.logos[0].src}
+                            alt={project.logos[0].alt}
+                            width="72"
+                            height="72"
+                            class="object-contain flex-shrink-0 opacity-90"
+                            style="width: 72px; height: 72px;"
+                            loading="lazy"
+                          />
+                        )}
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-start gap-2">
+                            <h3 class="text-lg font-semibold text-gray-900 dark:text-slate-50 flex-1">
+                              {project.title}
+                            </h3>
+                            {project.logos && project.logos.length > 1 && project.logos.map((logo: any) => (
+                              <img
+                                src={logo.src}
+                                alt={logo.alt}
+                                width="28"
+                                height="28"
+                                class="object-contain flex-shrink-0 opacity-80 mt-0.5"
+                                style="width: 28px; height: 28px;"
+                                loading="lazy"
+                              />
+                            ))}
+                          </div>
+                          {project.impact && (
+                            <div class="mt-1 badge-impact">
+                              {project.impact}
+                            </div>
+                          )}
                         </div>
-                      )}
+                      </div>
                       <p class="mt-3 text-body leading-relaxed" set:html={parseMarkdown(project.description)} />
                       <ul class="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
                         {project.technologies.map((tech: string) => (
