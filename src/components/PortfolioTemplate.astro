@@ -59,7 +59,7 @@ function parseMarkdown(text: string): string {
               </div>
             </div>
             <p class="mt-6 max-w-lg text-lg leading-relaxed text-body">
-              {header.tagline}
+              {header.tagline} <a href="/resume.pdf" target="_blank" rel="noreferrer" class="external-link-sm">View resume →</a>
             </p>
 
             {header.highlights && (
@@ -165,7 +165,7 @@ function parseMarkdown(text: string): string {
         </header>
 
         <!-- Right Column - Scrollable content -->
-        <main class="mt-16 lg:flex-1 lg:mt-0">
+        <main class="mt-16 lg:flex-1 lg:mt-0 lg:pt-8">
 
           <!-- About Section -->
           <section id="about" class="mb-20 scroll-mt-20" aria-label="About">
@@ -227,14 +227,6 @@ function parseMarkdown(text: string): string {
                   </li>
                 ))}
               </ol>
-              <div class="mt-10">
-                <a class="external-link" aria-label="View Full Resume" href="/resume.pdf">
-                  <span>View Full Resume</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"></path>
-                  </svg>
-                </a>
-              </div>
             </div>
           </section>
 

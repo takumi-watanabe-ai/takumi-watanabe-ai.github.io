@@ -9,7 +9,7 @@ export const portfolioData = {
     name: 'Takumi Watanabe',
     title: 'AI Engineer | Agentic AI & RAG',
     tagline:
-      'Specializing in production LLM and RAG systems using Python, LangChain, and AWS. Expert in agentic workflows, hybrid search, and LLM evaluation.',
+      'Specializing in local LLM deployment, MCP integrations, and production RAG systems. Ship production AI without handing your data to the cloud.',
     email: 'w.takumi.cs@gmail.com',
     socialLinks: {
       linkedin: 'https://www.linkedin.com/in/takumi-watanabe/',
@@ -25,9 +25,8 @@ export const portfolioData = {
 
   about: [
     "I'm an **AI Engineer** with **13 years of software engineering experience**, now specializing in **production LLM and RAG systems**. I architect and deploy enterprise-grade agentic AI applications using **Python**, **LangChain**, and **AWS**, with full-stack ownership from design through production deployment.",
-    "My work focuses on building **measurable, production-ready systems** rather than proofs of concept. I've deployed enterprise RAG solutions processing thousands of documents with continuous evaluation frameworks, implemented privacy-first architectures using local LLM inference, and built distributed systems achieving enterprise-grade reliability. Before specializing in AI, I spent years building scalable cloud infrastructure and microservices at companies like BlackBerry and Microsoft.",
-    "**<a href='https://www.ragnosis.app' target='_blank' rel='noreferrer'>RAGnosis</a>** is my flagship project, a live agentic RAG platform demonstrating sophisticated patterns beyond basic vector search. It combines agentic query planning, hybrid search with RRF fusion, automated quality evaluation via RAGAS, and real-time integration with HuggingFace models and GitHub repositories. The system showcases production-ready techniques for building intelligent, evaluated RAG applications.",
-    "**[AWS Certified](#certifications)**: Generative AI Developer (Professional + Early Adopter) | Machine Learning Specialty\n\n**Available for consulting**: Enterprise RAG implementation, agentic AI systems, LLM evaluation frameworks, privacy-first local LLM architectures, and MCP integrations. Particularly interested in projects requiring measurable quality improvements, hybrid search optimization, and production deployment expertise.\n\n**Bilingual**: English and Japanese",
+    "My work focuses on building **measurable, production-ready systems** rather than proofs of concept. I've deployed enterprise RAG solutions processing thousands of documents with continuous evaluation frameworks, built **local LLM inference pipelines** with Ollama for complete data sovereignty and zero external API costs, and connected AI systems to enterprise tools using the **Model Context Protocol (MCP)**. I bring that same infrastructure rigour from years building scalable cloud systems at BlackBerry and Microsoft.",
+    "**[AWS Certified](#certifications)**: Generative AI Developer (Professional + Early Adopter) | Machine Learning Specialty\n\n**Available for consulting**: Enterprise RAG, agentic AI systems, LLM evaluation, local LLM deployment, and MCP integrations. Particularly interested in projects requiring data privacy, measurable quality improvements, and production-grade reliability.\n\n**Bilingual**: English and Japanese",
   ],
 
   experience: [
@@ -189,19 +188,26 @@ export const portfolioData = {
         'Agent Planning & Reasoning',
         'Autonomous Task Decomposition',
         'State Management',
+        'MCP (Model Context Protocol)',
+        'MCP Server Development',
+        'Enterprise Tool Integration via MCP',
       ],
     },
     {
-      category: 'LLM Integration & APIs',
+      category: 'Local LLM & Model Deployment',
       skills: [
-        'OpenAI API',
-        'OpenRouter',
-        'Ollama (Self-Hosted)',
-        'Claude (Anthropic)',
-        'GPT-4',
-        'CodeLlama',
-        'Model Selection',
+        'Ollama',
+        'Qwen',
+        'Llama 3',
+        'Gemma',
+        'On-Premise Inference',
+        'Air-Gapped Deployments',
+        'Model Quantization (GGUF)',
         'Privacy-First Architectures',
+        'OpenAI API',
+        'Claude (Anthropic)',
+        'OpenRouter',
+        'Model Selection & Benchmarking',
       ],
     },
     {
